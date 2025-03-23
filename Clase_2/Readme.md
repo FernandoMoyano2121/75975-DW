@@ -93,7 +93,7 @@ while (repetir) {
 }
 ```
 
-# Ejemplo ludico utilizando while
+# Ejemplo lúdico utilizando while
 
 ---
 
