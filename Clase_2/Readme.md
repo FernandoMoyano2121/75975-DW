@@ -8,7 +8,7 @@ Una ESTRUCTURA CONDICIONAL O DE CONTROL DE FLUJO en la programación es una estr
 
 En términos más técnicos, un CONDICIONAL se compone de una expresión lógica que puede ser verdadera o falsa, y uno o más bloques de código que se ejecutan si la expresión es verdadera o falsa. El bloque de código que se ejecuta se delimita mediante llaves {} y puede contener una o más instrucciones
 
-# Operadores
+# Operadores más usados en estructuras de control
 
 ---
 
@@ -36,7 +36,7 @@ En términos más técnicos, un CONDICIONAL se compone de una expresión lógica
 // ! Operador not (no)
 ```
 
-# Que devuelve prompt cuando no ingresamos datos? ()
+# Que devuelve prompt() cuando no ingresamos datos?
 
 ---
 
