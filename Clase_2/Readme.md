@@ -4,7 +4,7 @@
 
 ALGORITMO en programación, es un conjunto de procedimientos o funciones que se necesitan para realizar cierta operación o acción.
 
-Un ESTRUCTURA CONDICIONAL O DE CONTROL DE FLUJO en la programación es una estructura que permite al programa tomar decisiones y ejecutar diferentes instrucciones en  función de una condición. Consiste en evaluar una expresión lógica y dependiendo del resultado de esa evaluación, ejecutar  un bloque de código específico.
+Una ESTRUCTURA CONDICIONAL O DE CONTROL DE FLUJO en la programación es una estructura que permite al programa tomar decisiones y ejecutar diferentes instrucciones en  función de una condición. Consiste en evaluar una expresión lógica y dependiendo del resultado de esa evaluación, ejecutar  un bloque de código específico.
 
 En términos más técnicos, un CONDICIONAL se compone de una expresión lógica que puede ser verdadera o falsa, y uno o más bloques de código que se ejecutan si la expresión es verdadera o falsa. El bloque de código que se ejecuta se delimita mediante llaves {} y puede contener una o más instrucciones
 
@@ -93,7 +93,7 @@ while (repetir) {
 }
 ```
 
-# Ejemplo ludico
+# Ejemplo ludico utilizando while
 
 ---
 

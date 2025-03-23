@@ -37,10 +37,12 @@ if (nombre) {
 
 - aceptar devuelve una cadena vacía = "" 
 - cancelar devuelve null
-- En el caso de no realizar el parseo en el pedido puedo hacerlo despues generando una nueva variable.
+- En el caso de no realizar el parseo en el pedido puedo
+ hacerlo despues generando una nueva variable.
 
 
-Al utilizar el isNaN negado lo que hacemos es comprobar si el valor es un numero
+Al utilizar el isNaN negado lo que hacemos es comprobar
+ si el valor es un numero
 
 !isNaN(nombre): Comprueba si el valor ingresado es un número
  La función isNaN() devuelve true si el valor no es un número
