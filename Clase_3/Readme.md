@@ -1,3 +1,7 @@
+# 📦Funciones
+
+---
+
 Las **funciones** en JavaScript son **bloques de código reutilizables** que ejecutan una tarea específica o calculan un valor. Sirven para **organizar**, **modularizar** y **reutilizar** el código, haciéndolo más legible y fácil de mantener.
 
 # 🎗️Principio DRY
