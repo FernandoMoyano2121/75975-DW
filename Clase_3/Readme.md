@@ -26,9 +26,9 @@ El principio **YAGNI** ("You Aren't Gonna Need It") en JavaScript, y en programa
 
 ---
 
-📌**Mostrar Bienvenida al Usuario**
-📌**Mostrar Menú de Opciones:**
-📌**Funcionalidades del Menú:**
+1. **Mostrar Bienvenida al Usuario**
+2. **Mostrar Menú de Opciones:**
+3. **Funcionalidades del Menú:**
 
 - **Opción 1 – Ingresar una Nueva Tarea:**
   - Solicitar al usuario que ingrese una tarea mediante **`prompt()`**.
@@ -40,6 +40,6 @@ El principio **YAGNI** ("You Aren't Gonna Need It") en JavaScript, y en programa
 - **Opción 3 – Salir:**
   - Finalizar el programa y mostrar un **mensaje de despedida**.
 
-📌 **Validación de Entrada:**
+4. **Validación de Entrada:**
 
 - Si el usuario ingresa una opción inválida, debe mostrarse el mensaje:
