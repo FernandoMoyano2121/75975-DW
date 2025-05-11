@@ -111,7 +111,7 @@ const productos = [
   { id: 4, nombre: "Monitor", precio: 300, stock: 7 },
   { id: 5, nombre: "Auriculares", precio: 80, stock: 10 },
 ];
-
+``;
 /* =====================================
 =       Mostrar los productos          =
 ===================================== */
