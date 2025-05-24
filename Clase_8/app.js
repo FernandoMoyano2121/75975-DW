@@ -10,6 +10,7 @@ const filtroCompletadas = document.getElementById("filtroCompletadas");
 /* listado de tareas */
 const listaTareas = document.getElementById("listaTareas");
 const mensajeVacio = document.getElementById("mensajeVacio");
+
 const contadorTareas = document.getElementById("contadorTareas");
 
 /* conjunto de botones */
@@ -178,19 +179,19 @@ function comprobarCantidadTareas(tareasFiltradas, mensaje) {
   }
 }
 
-//BOTON QUE MUESTRA TODAS LAS TAREAS/////////
+//BOTON QUE MUESTRA TODAS LAS TAREAS//////////////////////////
 filtroTodas.addEventListener("click", () => {
   filtroActual = "todas";
   mostrarTareas();
 });
 
-//BOTON QUE MUESTRA LAS TAREAS ACTIVAS/////////
+//BOTON QUE MUESTRA LAS TAREAS ACTIVAS////////////////////////////
 filtroActivas.addEventListener("click", () => {
   filtroActual = "activas";
   mostrarTareas();
 });
 
-//BOTON QUE MUESTRA LAS TAREAS COMPLETADAS/////////
+//BOTON QUE MUESTRA LAS TAREAS COMPLETADAS///////////////////////////
 filtroCompletadas.addEventListener("click", () => {
   filtroActual = "completadas";
   mostrarTareas();
