@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>App Tareas</h1>
+    <div>
+      <input type="text" id="inputTarea" placeholder="Añadir una nueva tarea" />
+      <button id="botonAgregar">Agregar</button>
+    </div>
+
+    <div class="contenedor-botones">
+      <button class="botonFiltro" data-filtro="todas" id="filtroTodas">
+        Todas
+      </button>
+      <button class="botonFiltro" data-filtro="activas" id="filtroActivas">
+        Activas
+      </button>
+      <button
+        class="botonFiltro"
+        data-filtro="completadas"
+        id="filtroCompletadas">
+        Completadas
+      </button>
+    </div>
+
+    <!-- Por dentro se renderizaran las tareas -->
+    <ul id="listaTareas"></ul>
+
+    <!-- Mensaje que se muestra cuando hay tareas -->
+    <div id="mensajeVacio">
+      <p>No hay tareas pendientes. ¡Añade una nueva!</p>
+    </div>
+
+    <div><span id="contadorTareas">0</span>tareas pendientes</div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
