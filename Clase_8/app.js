@@ -15,17 +15,14 @@ const contadorTareas = document.getElementById("contadorTareas");
 /* conjunto de botones */
 const botonesFiltro = document.querySelectorAll(".botonFiltro");
 
-/* filtro todas marcado como filtro por defecto */
-filtroTodas.style.fontWeight = "bold";
-
-//FUNCTION QUE OBTIENE LAS TAREAS DEL STORAGE////////////////////
+//FUNCTION QUE OBTIENE LAS TAREAS DEL STORAGE////////////////////////
 function obtenerTareasDelStorage() {
   let tareasEnStorage = localStorage.getItem("tareas");
   if (tareasEnStorage) return JSON.parse(tareasEnStorage);
   else return [];
 }
 
-//FUNCION QUE GUARDA LOS ELEMENTOS EN EL STORAGE/////////////
+//FUNCION QUE GUARDA LOS ELEMENTOS EN EL STORAGE///////////////////
 function guardarTareasEnElStorage(tareas) {
   localStorage.setItem("tareas", JSON.stringify(tareas));
 }
@@ -33,7 +30,10 @@ function guardarTareasEnElStorage(tareas) {
 /* Array para alamacenar el listado de tareas */
 let tareas = obtenerTareasDelStorage();
 let filtroActual = "todas";
+/* filtro todas marcado como filtro por defecto */
+filtroTodas.style.fontWeight = "bold";
 
+//FUNCION QUE AGREGA TAREAS AL LOCAL STORAGE////////////////////
 function agregarTarea() {
   /* obtencion del texto ingreesao por el usuario */
   const textoTarea = inputTarea.value.trim();
@@ -56,6 +56,7 @@ function agregarTarea() {
   mostrarTareas();
 }
 
+//FUNCTION QUE RENDERIZA EL LISTADO DE TAREAS//////////////////////
 function mostrarTareas() {
   /* filtrar tareas */
   let tareasFiltradas = filtrarTareas(tareas, filtroActual);
@@ -77,7 +78,7 @@ function actulizarContadorTareas(tareas) {
   contadorTareas.textContent = tareasActivas;
 }
 
-//FUNCION QUE CREA EL BOTON ELIMINAR
+//FUNCION QUE CREA EL BOTON ELIMINAR////////////////////////////
 function crearBotonEliminar() {
   const botonEliminar = document.createElement("button");
   botonEliminar.textContent = "Eliminar";
@@ -85,7 +86,7 @@ function crearBotonEliminar() {
   return botonEliminar;
 }
 
-//FUNCION QUE CREAR EL ELEMENTO TEXT////////////
+//FUNCION QUE CREAR EL ELEMENTO TEXT////////////////////////////
 function crearTextoTarea(tarea) {
   const span = document.createElement("span");
   span.textContent = tarea.texto;
@@ -96,7 +97,7 @@ function crearTextoTarea(tarea) {
   return span;
 }
 
-//FUNCION QUE CREAR EL ELEMENTO CHECKBOX////////////////
+//FUNCION QUE CREAR EL ELEMENTO CHECKBOX/////////////////////
 function crearCheckbox(tarea) {
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
@@ -105,7 +106,7 @@ function crearCheckbox(tarea) {
   return checkbox;
 }
 
-//FUNCION QUE CREA EL ITEM DE LA TAREA/////////////////
+//FUNCION QUE CREA EL ITEM DE LA TAREA/////////////////////
 function crearListItemTarea(tarea) {
   /* item tarea */
   const itemTarea = document.createElement("li");
@@ -130,7 +131,7 @@ function crearListItemTarea(tarea) {
   return itemTarea;
 }
 
-//FUNCION PARA CAMBIAR EL ESTADO DE LA TAREA//////////////
+//FUNCION PARA CAMBIAR EL ESTADO DE LA TAREA///////////////////
 function cambiarEstadoTarea(id) {
   const idNum = Number(id);
   tareas = tareas.map((tarea) => {
@@ -143,7 +144,7 @@ function cambiarEstadoTarea(id) {
   mostrarTareas();
 }
 
-//FUNCION QUE ELIMINAR UNA TAREA/////////////////////
+//FUNCION QUE ELIMINAR UNA TAREA///////////////////////////
 function eliminarTarea(id) {
   const idNum = Number(id);
   tareas = tareas.filter((tarea) => tarea.id !== idNum);
@@ -151,7 +152,7 @@ function eliminarTarea(id) {
   mostrarTareas();
 }
 
-//FUNCION QUE FILTRA LAS TAREAS////////////////////
+//FUNCION QUE FILTRA LAS TAREAS///////////////////////////
 function filtrarTareas(tareas, tipoDeFiltro) {
   if (tipoDeFiltro === "activas") {
     return tareas.filter((tarea) => !tarea.completada);
@@ -162,7 +163,7 @@ function filtrarTareas(tareas, tipoDeFiltro) {
   return tareas;
 }
 
-//FUNCION PARA COMPROBAR LA CANTIDAD DE TAREAS////////////////
+//FUNCION PARA COMPROBAR LA CANTIDAD DE TAREAS///////////////////
 function comprobarCantidadTareas(tareasFiltradas, mensaje) {
   if (tareasFiltradas.length === 0) {
     mensaje.style.display = "block";
